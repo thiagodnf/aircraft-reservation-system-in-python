@@ -1,4 +1,4 @@
-# ✈️ Aircraft Reservation System
+# ✈️ Aircraft Reservation System in Python
 
 A console-based booking solution that helps airlines companies to reserve seats
 
