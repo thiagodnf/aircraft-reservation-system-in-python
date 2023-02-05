@@ -22,6 +22,10 @@ class ReserveASeatController(Controller):
         return ControllerId.MENU
 
     def askPassengerName(self):
+        """! Ask the passenger name. If the user provides a blank string
+        a RuntimeError still be raised.
+        @return the passenger name
+        """
 
         passengerName = ConsoleUtils.askString("Passenger Name: ")
 

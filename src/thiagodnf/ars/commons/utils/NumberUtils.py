@@ -3,13 +3,13 @@ import re
 from thiagodnf.ars.commons.utils.StringUtils import StringUtils
 
 class NumberUtils:
-    #
-    #      * Verify if a given string is an integer
-    #      * @param str string to be verified
-    #      * @return True if it is a string, False, otherwise.
-    #
+
     @classmethod
     def isInt(cls, str_):
+        """! Verify if a given string is an integer
+        @param str_ string to be verified
+        @return True if it is a string, False, otherwise.
+        """
 
         p = re.compile(r'-?\d+')
 

@@ -1,4 +1,3 @@
-
 import os
 
 from thiagodnf.ars.commons.utils.NumberUtils import NumberUtils

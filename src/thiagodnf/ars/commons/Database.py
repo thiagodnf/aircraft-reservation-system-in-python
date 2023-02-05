@@ -21,13 +21,13 @@ class Database:
 
         return reservation == None
 
-   #
-    #      * Save into the database the seat number and passenger name
-    #      *
-    #      * @param seatNumber The seat number to be saved
-    #      * @param passengerName the passenger name to be saved
-    #
     def reserve(self, seatNumber, passengerName):
+
+        """! Save into the database the seat number and passenger name
+        @param seatNumber The seat number to be saved
+        @param passengerName the passenger name to be saved
+        """
+
         self.reservations.append(Reservation(seatNumber, passengerName))
 
     def getReservationBySeatNumber(self, seatNumber):

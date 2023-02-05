@@ -2,7 +2,6 @@ from thiagodnf.ars.commons.ControllerId import ControllerId
 from thiagodnf.ars.commons.utils.ConsoleUtils import ConsoleUtils
 from thiagodnf.ars.features.Controller import Controller
 
-
 class MenuController(Controller):
 
     def display(self):

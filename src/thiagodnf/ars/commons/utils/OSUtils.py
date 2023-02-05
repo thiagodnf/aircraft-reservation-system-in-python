@@ -2,13 +2,12 @@ import platform
 
 class OSUtils:
 
-     #/**
-#      * Verify if the operational system used is Windows
-#      *
-#      * @return true if is Windows. False otherwise
-#      */
     @classmethod
     def isWindows(cls):
+        """! Verify if the operational system used is Windows
+        @return True if it is Windows, False, otherwise.
+        """
+
         return platform.system() == "Windows"
 
     @classmethod
