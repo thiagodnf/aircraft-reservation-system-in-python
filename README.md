@@ -29,7 +29,7 @@ Contributions to the this project are very welcome! We can't do this alone! Feel
 
 ## Authors
 
-* **Thiago do N. Ferreira** - *Initial work*
+* **Thiago Ferreira** - *Initial work*
 
 See also the list of [contributors](../../graphs/contributors) who participated in this project.
 
