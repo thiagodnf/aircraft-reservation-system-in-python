@@ -9,15 +9,23 @@ A console-based booking solution that helps airlines companies to reserve seats
 
 <table style="padding:10px">
   <tr>
-    <td> 
+    <td>
          <img src="https://user-images.githubusercontent.com/98138701/163860988-afa83c31-cf9f-4865-b5e0-3378ec8dfef7.png"  alt="1" width = 279px ></td>
-      
+
  <td>
   <img src="https://user-images.githubusercontent.com/98138701/163860984-423ed954-c893-46fa-8674-c4c36d74ce1c.png" align="right" alt="2" width = 279px></td>
    <td><img src="https://user-images.githubusercontent.com/98138701/163860986-801ddb80-e8d2-4982-9efa-99bd8e864c1e.png" alt="3" width = 288px ></td>
-    
+
   </tr>
 </table>
+
+## Running
+
+Import this project on your preferred IDE (e.g., PyCharm or Visual Studio Code) then run:
+
+```sh
+python3 src/main.py
+```
 
 ## Questions or Suggestions
 
