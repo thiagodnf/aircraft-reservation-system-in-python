@@ -1,5 +1,6 @@
 class StringUtils(object):
-
+    """! checks whether string is blank or not
+    """
     @classmethod
     def isBlank(cls, str_):
 
