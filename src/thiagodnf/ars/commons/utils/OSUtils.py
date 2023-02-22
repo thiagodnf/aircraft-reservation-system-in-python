@@ -7,6 +7,7 @@ class OSUtils:
     @classmethod
     def isWindows(cls):
         """! Verify if the operational system used is Windows
+        @param cls clears screen
         @return True if it is Windows, False, otherwise.
         """
 
@@ -15,6 +16,7 @@ class OSUtils:
     @classmethod
     def isMac(cls):
         """! Verifies if the operating system used is Mac
+        @param cls clears screen
         @return True if it is Mac, False, otherwise.
         """
         return platform.system() == "Darwin"
@@ -22,6 +24,7 @@ class OSUtils:
     @classmethod
     def isUnix(cls):
         """! Verifies if the operating system used is Linux
+        @param cls clears screen
         @return True if it is Linux, False, otherwise.
         """
         return platform.system() == "Linux"
