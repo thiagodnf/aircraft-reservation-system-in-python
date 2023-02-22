@@ -6,6 +6,11 @@ class MenuController(Controller):
 
     def display(self):
 
+        """! This method is for displaying the main menu of the program. When running, a user can choose between reserving a seat, cancelling a reservation,
+        displaying the aircraft and available seats, and displaying a list of passengers. An option to exit is also provided. The user can choose the corresponding option
+        to access the sub-feature. If an invalid option is entered, an exception is thrown.
+        """
+
         ConsoleUtils.println("Home")
         ConsoleUtils.printLine()
         ConsoleUtils.println("1 - Reserve Seat")
