@@ -5,10 +5,16 @@ from thiagodnf.ars.commons.Database import Database
 from thiagodnf.ars.commons.Aircraft import Aircraft
 
 class ListofPassengersController(Controller):
+    """! This class lists all of the passengers on the aircraft.
+    @param db   This is what pulls passenger information from the reservation database
+    """
 
     db = Database.getInstance()
 
     def display(self):
+        """! This method prints the list of passengers based off of information contained in the passenger database.
+        The user can press enter after reviewing the information to return to the main menu.
+        """
 
         ConsoleUtils.println("Home >> List of Passengers")
         ConsoleUtils.printLine()
@@ -34,6 +40,11 @@ class ListofPassengersController(Controller):
 
     @classmethod
     def getPassengerName(cls, reservation):
+        """! This method pulls the names of passengers from the data database. If there are no reservations, then nothing will be printed.
+        @param cls  Clears screen
+        @param reservation   The list of reservations from the DB
+        @return reservation  Returns the reservations from the DB
+        """
 
         if reservation == None:
             return ""
@@ -42,6 +53,11 @@ class ListofPassengersController(Controller):
 
     @classmethod
     def getWhen(cls, reservation):
+        """! This method displays a reservation when it is properly formatted
+        @param cls   Clears the screen
+        @param reservation   The list of reservations from the DB
+        @return reservation   Returns the formatted reservation
+        """
 
         if reservation == None:
             return ""
