@@ -6,9 +6,9 @@ from thiagodnf.ars.commons.utils.StringUtils import StringUtils
 from thiagodnf.ars.features.Controller import Controller
 
 class ReserveASeatController(Controller):
-        """! This class is used to reserve a seat. It begins by displaying the aircraft in the terminal, then asks the user what seat they want.
-        After selecting a seat, the program prompts for the name.
-        """
+    """! This class is used to reserve a seat. It begins by displaying the aircraft in the terminal, then asks the user what seat they want.
+    After selecting a seat, the program prompts for the name.
+    """
 
 def display(self):
 
