@@ -3,6 +3,9 @@ from thiagodnf.ars.commons.utils.ConsoleUtils import ConsoleUtils
 from thiagodnf.ars.features.Controller import Controller
 
 class MenuController(Controller):
+    """! This class displays the menu when the program is first run. Users can choose various options that relate to managing their reservation.
+    @param Controller   The menu that gets displayed
+    """
 
     def display(self):
 
