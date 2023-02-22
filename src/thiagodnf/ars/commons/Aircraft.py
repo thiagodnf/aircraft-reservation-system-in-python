@@ -5,7 +5,9 @@ from thiagodnf.ars.commons.utils.ConsoleUtils import ConsoleUtils
 from thiagodnf.ars.commons.utils.StringUtils import StringUtils
 
 class Aircraft:
-
+    """! determines number of rows and columns 
+    and recieves user's seat number.
+    """
     numberOfRows = 7
 
     numberOfColumns = 2
