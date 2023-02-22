@@ -38,6 +38,7 @@ def display(self):
 def askPassengerName(self):
     """! Ask the passenger name. If the user provides a blank string
     a RuntimeError still be raised.
+    @param passengerName   The name of the passenger
     @return the passenger name
     """
 
@@ -55,6 +56,7 @@ def askSeatNumber(self):
     If an invalid input is entered, an error is thrown. If the wrong format is entered, an error is thrown. If a seat is already reserved, an error is thrown.
     Each time an error occurs, the user gets to re-enter the information until a valid entry is entered.
     This program also converts the entered seat number to uppercase.
+    @param seatNumber   The seat number of the passenger, converted into uppercase
     @return seatNumber     This is the seat number that is entered into the database
     """
 

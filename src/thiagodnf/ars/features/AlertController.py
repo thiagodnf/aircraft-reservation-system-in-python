@@ -3,7 +3,6 @@ from thiagodnf.ars.features.Controller import Controller
 
 class AlertController(Controller):
     """! This is responsible for error handling. If the user enters the wrong input, an error will be thrown.
-    @param Controller   Obtains the available options from the controller
     """
 
     message = str()

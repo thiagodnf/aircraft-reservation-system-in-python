@@ -4,7 +4,6 @@ from thiagodnf.ars.features.Controller import Controller
 
 class MenuController(Controller):
     """! This class displays the menu when the program is first run. Users can choose various options that relate to managing their reservation.
-    @param Controller   The menu that gets displayed
     """
 
     def display(self):
@@ -12,6 +11,11 @@ class MenuController(Controller):
         """! This method is for displaying the main menu of the program. When running, a user can choose between reserving a seat, cancelling a reservation,
         displaying the aircraft and available seats, and displaying a list of passengers. An option to exit is also provided. The user can choose the corresponding option
         to access the sub-feature. If an invalid option is entered, an exception is thrown.
+        Option 1 lets a user reserve a seat.
+        Option 2 lets a user cancel a reservation.
+        Option 3 lets a user see the aircraft and seats.
+        Option 4 displays a list of current passengers.
+        Option 5 quits the program.
         """
 
         ConsoleUtils.println("Home")
