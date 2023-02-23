@@ -1,6 +1,9 @@
 from thiagodnf.ars.commons.utils.DateTimeUtils import DateTimeUtils
 
 class Reservation:
+    """! This class is for making aircraft reservations 
+    It contains the seatnumber, passenger name, and when the reservation is for. 
+    """
 
     seatNumber = None
     passengerName = None
