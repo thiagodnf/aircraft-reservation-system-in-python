@@ -10,6 +10,10 @@ class Reservation:
     when = None
 
     def __init__(self, seatNumber,  passengerName) :
+        """! This assigns the variables types to the name of the object. 
+        @param seatNumber the seatnumber name to the variable.
+        @param passengerName the passengerName name to the variable.
+        @param when, the time of the reservation to the date variable. """
         self.seatNumber = seatNumber
         self.passengerName = passengerName
         self.when = DateTimeUtils.getNow()
