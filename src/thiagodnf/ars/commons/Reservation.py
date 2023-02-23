@@ -15,6 +15,8 @@ class Reservation:
         self.when = DateTimeUtils.getNow()
 
     def  getSeatNumber(self) :
+        """! This gets the passengers seat number from the reservation.
+        @return passenger's seat number."""
         return self.seatNumber
 
     def  getPassengerName(self) :
