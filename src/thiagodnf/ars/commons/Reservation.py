@@ -20,6 +20,8 @@ class Reservation:
         return self.seatNumber
 
     def  getPassengerName(self) :
+        """! This gets the passenger's name from the reservation.
+        @return passenger's name. """
         return self.passengerName
 
     def  getWhenFormatted(self) :
