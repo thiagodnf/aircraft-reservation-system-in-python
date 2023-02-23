@@ -25,4 +25,6 @@ class Reservation:
         return self.passengerName
 
     def  getWhenFormatted(self) :
+        """! This gets the format for the passenger's reservation time. 
+        @return the time and date of the passenger's reservation."""
         return DateTimeUtils.format(self.when)
