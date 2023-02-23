@@ -4,18 +4,30 @@ from thiagodnf.ars.commons.utils.NumberUtils import NumberUtils
 from thiagodnf.ars.commons.utils.OSUtils import OSUtils
 
 class ConsoleUtils(object):
-
+    """! The ConsoleUtils class.
+    Deals with a wide range of outputs specific
+    to each method, as well as clearing the screen.
+    """
     ANSI_RED = "\033[0;31m"
     ANSI_GREEN = "\033[0;32m"
     ANSI_RESET = "\u001B[0m"
 
     @classmethod
     def printLine(cls):
+        """! Prints a dashed line.
+        @param cls Clears screen
+        """
         ConsoleUtils.println("------------------------------------------------------------")
 
     @classmethod
     def clearScreen(cls):
-
+        """! Clears screen based on operating system 
+        and prints header.
+        If OS is Windows use 'cls'
+        Else If OS is Mac use '\033c'
+        Else OS is different use 'clear'
+        @param cls Clears screen
+        """
         if OSUtils.isWindows():
             os.system('cls')
         elif OSUtils.isMac():
@@ -27,20 +39,33 @@ class ConsoleUtils(object):
 
     @classmethod
     def println(cls, str_):
+        """! prints ConsoleUtils.ANSI_RESET 
+        in string format.
+        @param cls Clears screen
+        @param str_ returns string of an object
+        """
         print(str_ + ConsoleUtils.ANSI_RESET)
 
     @classmethod
     def printHeader(cls):
+        """! Returns a string in between the printLine 
+        function.
+        @param cls Clears screen
+        """
         ConsoleUtils.printLine()
         ConsoleUtils.println("Aircraft Reservation System - v0.0.1")
         ConsoleUtils.printLine()
 
     @classmethod
     def printFooter(cls):
+        """! returns a string in the color green.
+        @param cls Clears screen
+        """
         ConsoleUtils.println(ConsoleUtils.setGreenColor("Bye! =)"))
 
     @classmethod
     def showError(cls, text):
+
         ConsoleUtils.println(ConsoleUtils.setRedColor("> Oops! " + text))
         ConsoleUtils.println("")
         ConsoleUtils.pressEnterToContinue()

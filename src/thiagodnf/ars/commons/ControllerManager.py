@@ -8,7 +8,8 @@ from thiagodnf.ars.features.AlertController import AlertController
 from thiagodnf.ars.features.ReserveASeatController import ReserveASeatController
 
 class ControllerManager(object):
-
+    """! Identifies what Id user selects.
+    """
     def getControllerById(self, id):
 
         if id == ControllerId.MENU:
