@@ -3,6 +3,7 @@ from thiagodnf.ars.commons.utils.ConsoleUtils import ConsoleUtils
 from thiagodnf.ars.features.Controller import Controller
 
 class MenuController(Controller):
+    """! This class displays the menu where a user can select which option they want to do for their aircraft reservation. """
 
     def display(self):
 
