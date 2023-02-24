@@ -5,7 +5,13 @@ from thiagodnf.ars.commons.Database import Database
 from thiagodnf.ars.commons.Aircraft import Aircraft
 
 class ListofPassengersController(Controller):
+    """! This class portrays the list of passengers on the aircraft.
+    It prints the seat number, reservation status, reservation time, and passenger name for the seat.
+    @author Marwa Hammami 
+    @since Feb 23, 2023
+    """
 
+    
     db = Database.getInstance()
 
     def display(self):

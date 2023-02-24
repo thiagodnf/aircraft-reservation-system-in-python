@@ -3,6 +3,11 @@ from thiagodnf.ars.commons.utils.ConsoleUtils import ConsoleUtils
 from thiagodnf.ars.features.Controller import Controller
 
 class MenuController(Controller):
+    """! This class provides the user a display of the menu of the aircaft and options to choose from for each of the categories. 
+    It displays the reserve seat, cancel resercation, display aircradt, list of air craft, and exit menu. 
+    @author Marwa Hammami 
+    @since Feb 23, 2023
+    """
 
     def display(self):
 
