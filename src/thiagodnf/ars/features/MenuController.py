@@ -3,8 +3,8 @@ from thiagodnf.ars.commons.utils.ConsoleUtils import ConsoleUtils
 from thiagodnf.ars.features.Controller import Controller
 
 class MenuController(Controller):
-    """! This class displays the menu where a user can select which option they want to do for their aircraft reservation. """
-
+    """!The MenuController class displays the controller 
+    and its sub menus for a userto do inputs for a reservation """
     def display(self):
 
         ConsoleUtils.println("Home")
@@ -15,6 +15,7 @@ class MenuController(Controller):
         ConsoleUtils.println("4 - List of Passengers")
         ConsoleUtils.println("5 - Exit")
         ConsoleUtils.printLine()
+        """!When the display is defined, it prints the sub menus"""
 
         option = ConsoleUtils.askInteger("Option: ")
 
@@ -31,3 +32,5 @@ class MenuController(Controller):
             quit()
         else:
             raise RuntimeError("Invalid option. Type a number between 1 to 5")
+        """!When different numbers are used they return the user to the main page
+        Initiates a error when a number is less than 1 or greater then 5"""

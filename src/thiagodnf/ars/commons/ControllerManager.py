@@ -8,6 +8,7 @@ from thiagodnf.ars.features.AlertController import AlertController
 from thiagodnf.ars.features.ReserveASeatController import ReserveASeatController
 
 class ControllerManager(object):
+    """!This class sets up the controllerManager object"""
 
     def getControllerById(self, id):
 
@@ -30,6 +31,7 @@ class ControllerManager(object):
 
             ConsoleUtils.clearScreen()
 
+            """! For This loop the ConsoleUtils.clearScreen will clear the screen when the controllerId equals .Menu """
             try:
 
                 current = self.getControllerById(currentId)
