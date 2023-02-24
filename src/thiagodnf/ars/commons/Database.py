@@ -17,6 +17,10 @@ class Database:
 
     def isAvailable(self, seatNumber):
 
+        """! Check if seat is available
+        @param getReservations
+        @param getseatNumber"""
+
         reservation = self.getReservationBySeatNumber(seatNumber)
 
         return reservation == None
@@ -32,6 +36,11 @@ class Database:
 
     def getReservationBySeatNumber(self, seatNumber):
 
+        """! Retrive from the database the seat number of the current passengers
+        @param getseatNumber
+        @recive seatNumber"""
+
+        
         for reservation in self.reservations:
 
             if reservation.getSeatNumber() == seatNumber:

@@ -24,6 +24,10 @@ class ControllerManager(object):
 
     def run(self):
 
+        """! Runs getConntroller ById
+        @param ControllerById
+        @recive Clear"""
+        
         currentId = ControllerId.MENU
 
         while True:

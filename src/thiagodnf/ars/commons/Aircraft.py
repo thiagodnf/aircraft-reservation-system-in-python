@@ -59,7 +59,7 @@ class Aircraft:
 
     @staticmethod
     def isValidSeatNumber(seatNumber):
-
+        
         validSeats = Aircraft.getValidSeatNumbers()
 
         if seatNumber in validSeats:
@@ -69,7 +69,9 @@ class Aircraft:
 
     @staticmethod
     def isValidSeatNumberFormat(seatNumber):
-
+        """! Checks if the seat number format is correct
+        @param ValidSeatNumber"""
+        
         if StringUtils.isBlank(seatNumber):
             return False
 
