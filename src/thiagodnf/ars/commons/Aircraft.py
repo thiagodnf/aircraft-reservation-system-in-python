@@ -5,6 +5,10 @@ from thiagodnf.ars.commons.utils.ConsoleUtils import ConsoleUtils
 from thiagodnf.ars.commons.utils.StringUtils import StringUtils
 
 class Aircraft:
+    """! This class represents the aircraft the program is using.
+        @author Justin Wareham
+        @since 2023-2-24
+    """
 
     numberOfRows = 7
 
