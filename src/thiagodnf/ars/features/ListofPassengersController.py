@@ -11,6 +11,7 @@ class ListofPassengersController(Controller):
     @since Feb 23, 2023
     """
 
+    
     db = Database.getInstance()
 
     def display(self):

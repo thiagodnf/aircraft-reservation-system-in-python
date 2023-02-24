@@ -59,11 +59,6 @@ class Aircraft:
 
     @staticmethod
     def isValidSeatNumber(seatNumber):
-        """! This method provides the user if the seat number provided is valid or invalid. 
-        @param seatNumber provide seatNumber.
-        @return True if seat is valid.
-        @return False if seat in not valid.
-        """
 
         validSeats = Aircraft.getValidSeatNumbers()
 
@@ -74,7 +69,9 @@ class Aircraft:
 
     @staticmethod
     def isValidSeatNumberFormat(seatNumber):
-
+        """! Checks if the seat number format is correct
+        @param ValidSeatNumber"""
+        
         if StringUtils.isBlank(seatNumber):
             return False
 
