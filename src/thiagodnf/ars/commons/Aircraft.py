@@ -5,6 +5,7 @@ from thiagodnf.ars.commons.utils.ConsoleUtils import ConsoleUtils
 from thiagodnf.ars.commons.utils.StringUtils import StringUtils
 
 class Aircraft:
+    """! This class displays the plane with all the seats available. If a seat is unavailable it shows up in red."""
 
     numberOfRows = 7
 
