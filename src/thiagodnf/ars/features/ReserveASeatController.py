@@ -6,6 +6,12 @@ from thiagodnf.ars.commons.utils.StringUtils import StringUtils
 from thiagodnf.ars.features.Controller import Controller
 
 class ReserveASeatController(Controller):
+    """! This class prompts the user to reserve a seat by first displaying the menu for them to choose a seat then asking them to provide their name.
+    The user will be asked to provide the seat they wish to have and their name in order to reserve a seat.
+    @author Marwa Hammami 
+    @since Feb 23, 2023
+    """
+
 
     def display(self):
 

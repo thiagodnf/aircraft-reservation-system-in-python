@@ -3,6 +3,9 @@ from thiagodnf.ars.features.Controller import Controller
 
 class AlertController(Controller):
 
+    """! This class represents an alert cor the main controller
+@author Corbin M.
+@since feb. 2023"""
     message = str()
 
     def __init__(self, message):

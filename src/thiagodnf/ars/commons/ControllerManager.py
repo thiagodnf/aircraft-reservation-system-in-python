@@ -9,8 +9,23 @@ from thiagodnf.ars.features.ReserveASeatController import ReserveASeatController
 
 class ControllerManager(object):
 
-    def getControllerById(self, id):
+    """! This class represents the overall controller manager.
+    The controller is the set of options you have and what it returns.
+    @author Justin Wareham
+    @since 2023-2-24
+    """
 
+    """! this class represents a manager for the controller menu
+    @author Corbin M.
+    @since feb. 2023"""
+
+    def getControllerById(self, id):
+        """! This method allows for the controller to recognize
+        numbers for actions.
+        @param id   the id is the number the user inputs in
+        @author Justin Wareham
+        @since 2023-2-24
+        """
         if id == ControllerId.MENU:
             return MenuController()
         elif id == ControllerId.LIST_OF_PASSENGERS:
@@ -23,6 +38,17 @@ class ControllerManager(object):
             raise RuntimeError("Controller id not found")
 
     def run(self):
+
+        """! This method allows for the input to be recognized as the id.
+            @author Justin Wareham
+            @since 2023-2-24
+        """
+
+
+        """! Runs getConntroller ById
+        @param ControllerById
+        @recive Clear"""
+
 
         currentId = ControllerId.MENU
 
