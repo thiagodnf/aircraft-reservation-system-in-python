@@ -6,6 +6,7 @@ from thiagodnf.ars.commons.Aircraft import Aircraft
 
 class ListofPassengersController(Controller):
 
+    
     db = Database.getInstance()
 
     def display(self):

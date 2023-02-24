@@ -8,7 +8,9 @@ from thiagodnf.ars.features.AlertController import AlertController
 from thiagodnf.ars.features.ReserveASeatController import ReserveASeatController
 
 class ControllerManager(object):
-
+    """! this class represents a manager for the controller menu
+    @author Corbin M.
+    @since feb. 2023"""
     def getControllerById(self, id):
 
         if id == ControllerId.MENU:
@@ -27,7 +29,7 @@ class ControllerManager(object):
         """! Runs getConntroller ById
         @param ControllerById
         @recive Clear"""
-        
+
         currentId = ControllerId.MENU
 
         while True:
