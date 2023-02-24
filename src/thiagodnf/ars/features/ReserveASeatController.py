@@ -6,9 +6,10 @@ from thiagodnf.ars.commons.utils.StringUtils import StringUtils
 from thiagodnf.ars.features.Controller import Controller
 
 class ReserveASeatController(Controller):
-
+    """!This class displays the controller for reserving a seat"""
     def display(self):
-
+        """!Sets up the display and prints the fields for a user to input data"""
+    
         ConsoleUtils.println("Home >> Reserve Seat")
         ConsoleUtils.printLine()
 
