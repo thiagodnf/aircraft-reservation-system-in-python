@@ -11,6 +11,7 @@ class ControllerManager(object):
     """! This class represents the overall controller manager. 
     The controller is the set of options you have and what it returns.
     @author Justin Wareham
+    @since 2023-2-24
     """
 
     def getControllerById(self, id):
@@ -18,6 +19,7 @@ class ControllerManager(object):
         numbers for actions.
         @param id   the id is the number the user inputs in
         @author Justin Wareham
+        @since 2023-2-24
         """
         if id == ControllerId.MENU:
             return MenuController()
@@ -33,6 +35,7 @@ class ControllerManager(object):
     def run(self):
         """! This method allows for the input to be recognized as the id.
             @author Justin Wareham
+            @since 2023-2-24
         """
         currentId = ControllerId.MENU
 
