@@ -59,6 +59,11 @@ class Aircraft:
 
     @staticmethod
     def isValidSeatNumber(seatNumber):
+        """! This method provides the user if the seat number provided is valid or invalid. 
+        @param seatNumber provide seatNumber.
+        @return True if seat is valid.
+        @return False if seat in not valid.
+        """
 
         validSeats = Aircraft.getValidSeatNumbers()
 
