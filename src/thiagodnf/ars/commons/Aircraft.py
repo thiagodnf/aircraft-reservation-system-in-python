@@ -5,7 +5,7 @@ from thiagodnf.ars.commons.utils.ConsoleUtils import ConsoleUtils
 from thiagodnf.ars.commons.utils.StringUtils import StringUtils
 
 class Aircraft:
-    """! This class represents the aircraft the program is using.
+    """! This class represents the layout of the aircraft the program is using.
         @author Justin Wareham
         @since 2023-2-24
     """
@@ -16,7 +16,11 @@ class Aircraft:
 
     @staticmethod
     def print():
-
+        """! This method prints the aircraft on screen with the amount
+            of remaining reservations.
+            @author Justin Wareham
+            @since 2023-2-24
+        """
         reservations = Database.getInstance().getReservations()
 
         seats = """
