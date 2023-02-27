@@ -2,6 +2,7 @@ from thiagodnf.ars.commons.utils.ConsoleUtils import ConsoleUtils
 from thiagodnf.ars.features.Controller import Controller
 
 class AlertController(Controller):
+    """!This class sets up the controller for the Alertcontroller"""
 
     message = str()
 

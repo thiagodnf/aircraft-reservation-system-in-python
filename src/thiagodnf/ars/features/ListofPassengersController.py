@@ -5,6 +5,7 @@ from thiagodnf.ars.commons.Database import Database
 from thiagodnf.ars.commons.Aircraft import Aircraft
 
 class ListofPassengersController(Controller):
+    """! This class displays the list of seats and the passenger name alongside. If they are empty, they say empty in green. If they are reserved they appear in red with the reservation name. """
 
     db = Database.getInstance()
 

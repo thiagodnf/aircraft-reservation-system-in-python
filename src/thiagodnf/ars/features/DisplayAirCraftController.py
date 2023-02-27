@@ -4,6 +4,7 @@ from thiagodnf.ars.commons.utils.ConsoleUtils import ConsoleUtils
 from thiagodnf.ars.features.Controller import Controller
 
 class DisplayAirCraftController(Controller):
+    """! This class displays the picture of the aircraft after the user enters the 'Display Aircraft' menu."""
 
     def display(self):
 
